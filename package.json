@@ -1,0 +1,23 @@
+{
+  "name": "pi-copy-snippet",
+  "version": "0.1.0",
+  "description": "Pick a code block, inline code, paragraph or single lines from a pi message and copy the source text via OSC 52",
+  "keywords": ["pi-package"],
+  "license": "MIT",
+  "author": "rodstrom",
+  "homepage": "https://github.com/rodstrom/pi-copy-snippet#readme",
+  "repository": { "type": "git", "url": "git+https://github.com/rodstrom/pi-copy-snippet.git" },
+  "bugs": { "url": "https://github.com/rodstrom/pi-copy-snippet/issues" },
+  "type": "module",
+  "engines": { "node": ">=22.19.0" },
+  "scripts": {
+    "test": "node --test"
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}
