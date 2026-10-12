@@ -252,9 +252,4 @@ export default function (pi: ExtensionAPI) {
     description: "Copy snippet from last assistant message",
     handler: (ctx) => run(ctx),
   });
-
-  // Keep the keys visible in the footer so they are not forgotten.
-  pi.on("session_start", (_event, ctx) => {
-    if (ctx.mode === "tui") ctx.ui.setStatus("pi-copy-snippet", `/${COMMAND} ${SHORTCUT}`);
-  });
 }
